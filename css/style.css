@@ -10,7 +10,6 @@ body{
 
 
 
-
 .bg-lightblue{
     background-color: #b3cee5;
 }
@@ -19,7 +18,7 @@ body{
 
 /* nav bar */
 nav{
-    height: 45px;
+    height: 80px;
     background-color: yellow;
     /* test */
 
@@ -37,9 +36,9 @@ nav{
 
 /* inizio hero */
 .container-big{
-    height: 420px;
+    height: 750px;
     /* test */
-    max-width: 690px;
+    max-width: 1200px;
 
     margin-left: auto;
     margin-right: auto;
@@ -50,7 +49,7 @@ nav{
 .container{
     display: flex;
 
-    max-width: 600px;
+    max-width: 1000px;
 
     margin-left: auto;
     margin-right: auto;
@@ -58,54 +57,143 @@ nav{
 
 
 
+
+
 .buisness-plane{
-    height: 750px;
-    width: 600px;
+    height: 1200px;
+    width: 1000px;
     background-color: blue;
     /* test */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
 }
+.plane{
+    width: 300px;
+    height: 950px;
+    background-color: grey;
+    /* test */
+}
+
+
+
+
+
 .contacts{
-    height: 250px;
-    width: 600px;
-    background-color: red;
-    /* test */
-}
-.partners{
-    height: 350px;
-    width: 600px;
-    background-color: blue;
-    /* test */
-}
-.operations{
-    height: 750px;
-    width: 600px;
-    background-color: red;
-    /* test */
-}
-.team-info{
     height: 300px;
+    width: 1000px;
+    background-color: red;
+    /* test */
+}
+
+
+
+
+
+.partners{
+    height: 530px;
+    width: 1000px;
+    background-color: blue;
+    /* test */
+    display: flex;
+}
+.partner-img{
     width: 600px;
+    height: 530px;
+    background-color: aquamarine;
+    /* test */
+}
+.partner-text{
+    flex-grow: 1;
+    background-color: blueviolet;
+}
+
+
+
+
+
+.operations{
+    height: 1200px;
+    width: 1000px;
+    background-color: red;
+    /* test */
+
+    /* da rivedere */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;  
+}
+.operation{
+    width: 300px;
+    height: 500px;
+    background-color: lightcoral;
+    /* test */
+}
+
+
+
+
+
+.team-info{
+    height: 500px;
+    width: 1000px;
     background-color: blue;
     /* test */
 }
+
+
+
+
+
 .companies{
-    height: 370px;
+    height: 650px;
     background-color: aquamarine;
     /* test */
     width: 100%;
+
+    display: flex;
 }
+.left-container{
+    width: calc(100% / 3);
+    height: 650px;
+    background-color: darkblue;
+    /* test */
+}
+.central-container{
+    width: calc(100% / 3);
+    height: 650px;
+    background-color: pink;
+    /* test */
+}
+.right-container{
+    width: calc(100% / 3);
+    height: 650px;
+    background-color: darkcyan;
+    /* test */
+}
+
+
+
+
+
 .free-trial{
-    height: 200px;
-    width: 600px;
+    height: 370px;
+    width: 1000px;
     /* test */
 }
 .questions{
-    height: 400px;
-    width: 600px;
+    height: 750px;
+    width: 1000px;
     background-color: red;
     /* test */
 }
 /* fine section */
+
+
 
 /* inizio footer */
 footer{
@@ -113,10 +201,19 @@ footer{
     color: white;
 }
 .footer-container{
-    height: 325px;
-    width: 700px;
+    height: 570px;
+    width: 1200px;
     /* test */
 
+    margin-left: auto;
+    margin-right: auto;
+
     display: flex;
+}
+.footer-box{
+    height: 570px;
+    width: calc(100% / 5);
+    border: 1px solid white;
+    /* test */
 }
 /* fine footer */
