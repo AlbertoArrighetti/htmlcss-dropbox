@@ -4,3 +4,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+}
+
+
+
+
+.bg-lightblue{
+    background-color: #b3cee5;
+}
+
+
+
+/* nav bar */
+nav{
+    height: 45px;
+    background-color: yellow;
+    /* test */
+
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-info{
+    /* to change in max */
+    min-width: 325px;
+    /* test */
+}
+/* fine nav bar */
+
+/* inizio hero */
+.container-big{
+    height: 420px;
+    /* test */
+    max-width: 690px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/* fine hero */
+
+/* inizio section */
+.container{
+    display: flex;
+
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.buisness-plane{
+    height: 750px;
+    width: 600px;
+    background-color: blue;
+    /* test */
+}
+.contacts{
+    height: 250px;
+    width: 600px;
+    background-color: red;
+    /* test */
+}
+.partners{
+    height: 350px;
+    width: 600px;
+    background-color: blue;
+    /* test */
+}
+.operations{
+    height: 750px;
+    width: 600px;
+    background-color: red;
+    /* test */
+}
+.team-info{
+    height: 300px;
+    width: 600px;
+    background-color: blue;
+    /* test */
+}
+.companies{
+    height: 370px;
+    background-color: aquamarine;
+    /* test */
+    width: 100%;
+}
+.free-trial{
+    height: 200px;
+    width: 600px;
+    /* test */
+}
+.questions{
+    height: 400px;
+    width: 600px;
+    background-color: red;
+    /* test */
+}
+/* fine section */
+
+/* inizio footer */
+footer{
+    background-color: black;
+    color: white;
+}
+.footer-container{
+    height: 325px;
+    width: 700px;
+    /* test */
+
+    display: flex;
+}
+/* fine footer */
