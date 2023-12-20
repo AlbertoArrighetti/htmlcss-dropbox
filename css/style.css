@@ -7,6 +7,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/* classi comuni */
 .container{
     max-width: 1000px;
 
@@ -28,6 +31,22 @@ h2{
     color: white;
     background-color: #0061ff;
 }
+.btn.white{
+    color: black;
+    border: 1px solid #5c5c5c;
+    background-color: white;
+}
+.text{
+    font-size: 20px;
+    font-weight: 800;
+
+    margin-bottom: 24px;
+}
+.value{
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
 
 
 /* nav bar */
@@ -141,16 +160,6 @@ h1{
 .details .infos{
     padding: 15px 0px;
 }
-.details .text{
-    font-size: 20px;
-    font-weight: 800;
-
-    margin-bottom: 24px;
-}
-.details .euro{
-    margin-bottom: 16px;
-    font-size: 12px;
-}
 .details .month{
     color: grey;
 }
@@ -180,37 +189,75 @@ h1{
     color: #0061ff;
 }
 /* fine colonne */
-
-
-
+/* sezione contantti sotto colonne */
 .contacts{
-    height: 300px;
-    width: 1000px;
-    background-color: red;
-    /* test */
+    margin-bottom: 150px;
+    
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #dddddf;
 }
+.contacts .type{
+    width: 100%;
+    padding: 14px;
+
+    text-align: center;
+    border-bottom: 1px solid #dddddf;
+}
+.contacts .enterprise{
+    display: flex;
+
+    padding: 30px;
+}
+.contacts .enterprise .btn-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 50%;
+}
+.contacts .enterprise .value{
+    margin-bottom: 58px;
+}
+/* fine sezione contantti sotto colonne */
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 .partners{
-    height: 530px;
-    width: 1000px;
-    background-color: blue;
-    /* test */
     display: flex;
 }
 .partner-img{
-    width: 600px;
-    height: 530px;
-    background-color: aquamarine;
-    /* test */
+    width: 60%;
+}
+.partner-img img{
+    width: 100%;
 }
 .partner-text{
-    flex-grow: 1;
-    background-color: blueviolet;
+    width: 40%;
+    padding: 60px 50px;
 }
+.partner-text p{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
 
 
 
