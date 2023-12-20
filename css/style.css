@@ -242,16 +242,7 @@ h1{
 }
 /*fine sezione trova un partner */
 
-
-
-
-
-
-
-
-
-
-
+/* 6 riquadri */
 .operations{
     display: flex;
     justify-content: space-between;
@@ -272,60 +263,112 @@ h1{
 .operation .text{
     margin-bottom: 40px;
 }
+/* fine 6 riquadri */
 
-
-
-
-
-
-
+/* info team */
 .team-info{
-    height: 500px;
-    width: 1000px;
-    background-color: blue;
-    /* test */
+    margin-bottom: 150px;
+}
+.team-info a {
+    color: #0906f1;
 }
 
+/*fine info team */
 
 
 
 
-.companies{
-    height: 650px;
-    background-color: aquamarine;
-    /* test */
-    width: 100%;
 
+
+
+
+/* quadrati */
+.squares{
     display: flex;
 }
-.left-container{
-    width: calc(100% / 3);
-    height: 650px;
+.lateral-squares{
     background-color: darkblue;
     /* test */
+    display: flex;
+    flex-wrap: wrap;
+
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
 }
-.central-container{
+.central-squares{
     width: calc(100% / 3);
-    height: 650px;
-    background-color: pink;
-    /* test */
+    height: calc(100vw / 3);
+
+    background-color: #f5f5f5;
 }
-.right-container{
-    width: calc(100% / 3);
-    height: 650px;
-    background-color: darkcyan;
-    /* test */
+.lateral-squares .square{
+    width: 50%;
+    height: 50%;
 }
+.square.bg-1{
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
+}
+.square.bg-2{
+    background-color: #61082b;
+}
+.square.bg-3{
+    background-color: #0093ce;
+}
+.square.bg-4{
+    background-color: #ff1c1c;
+}
+.square.bg-5{
+    background-color: #d5001f;
+}
+.square.bg-6{
+    background-color: #b4d0e7;
+}
+.square.bg-7{
+    background-color: #0d2481;
+}
+.square.bg-8{
+    background-color: #ffd830;
+}
+/* fine quadrati */
 
 
 
 
 
 .free-trial{
-    height: 370px;
-    width: 1000px;
-    /* test */
+    display: flex;
+
+    padding: 130px 0px;
 }
+.free-trial h2{
+    color: #630c2f;
+    width: 60%;
+    margin: 0;
+}
+.free-trial .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .questions{
     height: 750px;
     width: 1000px;
