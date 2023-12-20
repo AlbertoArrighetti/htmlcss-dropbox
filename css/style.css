@@ -8,7 +8,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
 /* classi comuni */
 .container{
     max-width: 1000px;
@@ -47,8 +46,6 @@ h2{
     font-size: 12px;
 }
 
-
-
 /* nav bar */
 nav{
     position: fixed;
@@ -75,7 +72,6 @@ nav a {
     color: black;
 }
 /* fine nav bar */
-
 
 /* inizio hero */
 .container-big{
@@ -118,7 +114,6 @@ h1{
     width: 100%;
 }
 /* fine hero */
-
 
 /* inizio section */
 .container h2{
@@ -189,6 +184,7 @@ h1{
     color: #0061ff;
 }
 /* fine colonne */
+
 /* sezione contantti sotto colonne */
 .contacts{
     margin-bottom: 150px;
@@ -282,6 +278,9 @@ h1{
 
 
 
+
+/* TO FIX */
+
 /* quadrati */
 .squares{
     display: flex;
@@ -335,6 +334,13 @@ h1{
 
 
 
+
+
+
+
+
+
+
 /* free trial */
 .free-trial{
     display: flex;
@@ -356,21 +362,7 @@ h1{
 /* fine free trial */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* domande */
 .questions{
     display: flex;
     flex-direction: column;
@@ -392,52 +384,62 @@ h1{
     font-weight: 600;
     border-bottom: 1px solid #b2b2b2;
 }
+/*fine domande */
 /* fine section */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* inizio footer */
 footer{
     background-color: black;
-    color: white;
 }
 .footer-container{
-    height: 570px;
-    /* test */
-
     max-width: 1200px;
 
     margin-left: auto;
     margin-right: auto;
 
     display: flex;
+    gap: 34px;;
 }
 .footer-box{
-    height: 570px;
-    width: calc(100% / 5);
-    border: 1px solid white;
-    /* test */
+    width: calc(100% / 5 - 34px / 5 * 4);
 }
 
+/* lista */
+.footer-container ul:first-of-type{
+    padding: 100px 0px;
+}
+.footer-box #border-bottom{
+    border-bottom: 1px solid #939393;
+}
+.footer-box li{
+    padding-bottom: 15px;
 
+    list-style-type: none;
+    font-weight: 400;
+}
+.footer-box li:first-child{
+    padding-bottom: 30px;
 
+    font-weight: 800;
+}
+.footer-box li a{
+    text-decoration: none;
+    color: #dcddde;
+}
+/* fine lista  */
 
+/* lingua */
+.language{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
+    margin: 50px 0px;
 
-
-
+    color: #9a9999;
+}
+/* fine lingua */
 
 
 
