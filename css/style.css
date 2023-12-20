@@ -21,6 +21,7 @@ h2{
 }
 .btn{
     display: inline-block;
+    text-align: center;
 
     padding: 10px 16px;
 
@@ -55,7 +56,6 @@ nav a {
     color: black;
 }
 /* fine nav bar */
-
 
 
 /* inizio hero */
@@ -101,14 +101,6 @@ h1{
 /* fine hero */
 
 
-
-
-
-
-
-
-
-
 /* inizio section */
 .container h2{
     margin-bottom: 60px;
@@ -117,23 +109,13 @@ h1{
     padding-right: 50px;
 }
 
-
-
-
-
-
-
+/* inizio colonne */
 .buisness-plane{
-    width: 1000px;
-   
-    /* test */
-
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     gap: 25px;
 
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 .plane{
     width: calc(100% / 3 - 25px / 3 * 2);
@@ -156,7 +138,7 @@ h1{
     padding: 0px 20px;
     margin-bottom: 50px;
 }
-.details .info{
+.details .infos{
     padding: 15px 0px;
 }
 .details .text{
@@ -171,9 +153,6 @@ h1{
 }
 .details .month{
     color: grey;
-}
-.details .functions{
-    margin-bottom: calc(50px - 25px);
 }
 .details .link{
     padding-bottom: 40px;
@@ -195,17 +174,19 @@ h1{
     padding-bottom: 25px;
 }
 .details ul li .fa-solid{
-    color: #1d6bff;
-    margin-right: 2px;
+    margin-right: 8px;
 }
-
+.details ul li .blue{
+    color: #0061ff;
+}
+/* fine colonne */
 
 
 
 .contacts{
     height: 300px;
     width: 1000px;
-    /* background-color: red; */
+    background-color: red;
     /* test */
 }
 
