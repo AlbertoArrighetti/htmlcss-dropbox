@@ -5,33 +5,52 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
-
-
 .bg-lightblue{
     background-color: #b3cee5;
 }
+.btn{
+    padding: 10px 16px;
 
+    color: white;
+    background-color: #0061ff;
+}
 
 
 /* nav bar */
 nav{
-    height: 80px;
-    background-color: yellow;
-    /* test */
-
     /* position: fixed; */
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
 }
-.nav-info{
-    /* to change in max */
-    min-width: 325px;
-    /* test */
+.left-nav, .right-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
 }
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* fine nav bar */
 
 /* inizio hero */
