@@ -54,9 +54,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 
-    height: 85px;
     width: 100%;
     top: 0;
+    left: 0;
 
     background-color: white;
 }
@@ -64,11 +64,20 @@ nav{
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 30px 20px;
+    margin: 0px 20px;
 }
 nav a {
     text-decoration: none;
     color: black;
+    padding: 30px 0px;
+}
+
+/* elementi hover */
+nav a:hover{
+    border-bottom: 2px solid #b2b2b2;
+}
+#border-non:hover{
+    border-bottom: none;
 }
 /* fine nav bar */
 
@@ -91,10 +100,10 @@ h1{
 .container-big .hero{
     display: flex;    
 }
-.container-big .hero a{
+.hero a{
     text-decoration: none;
 }
-.container-big .hero .hero-text{
+.hero .hero-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -102,17 +111,14 @@ h1{
     
     width: 30%;
 }
-.container-big .hero .hero-text .fa-solid{
-    position: absolute;
-    left: 0;
-    bottom: calc(70px + 25px);
-
+.hero .hero-text .fa-solid{
+    margin-top: 50px;
     font-size: 44px;
 }
-.container-big .hero .hero-img{
+.hero .hero-img{
     width: 70%;
 }
-.container-big .hero .hero-img img{
+.hero .hero-img img{
     width: 100%;
 }
 /* fine hero */
@@ -121,9 +127,6 @@ h1{
 .container h2{
     margin-bottom: 60px;
 }
-
-
-
 .container .radio-btn{
     padding-right: 50px;
 }
@@ -314,6 +317,13 @@ h1{
 
     width: 50%;
     height: 50%;
+
+    transition: border-width 0.3s ease;
+
+    border: 0px solid rgba(255, 255, 255, 0.5);
+}
+.square-container .square:hover{
+    border-width: 10px;
 }
 .square-container .square img {
     width: 50%;
@@ -334,7 +344,7 @@ h1{
     overflow: auto;
 }
 .square-container .xl-square img {
-    max-width: 270px;
+    max-width: 100%;
     margin-bottom: 40px;
 }
 .square-container .xl-square hr {
@@ -405,10 +415,7 @@ h1{
 
 /* domande */
 .questions{
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 150px;
+    min-height: calc(450px + 200px);
 }
 .questions h2{
     margin: 0;
@@ -417,13 +424,27 @@ h1{
     border-bottom: 1px solid #f3f3f3;
 }
 .questions .row{
-    display: flex;
-    justify-content: space-between;
-
-    padding: 42px 0px;
+    padding-top: 42px;
 
     font-weight: 600;
     border-bottom: 1px solid #b2b2b2;
+}
+.row p{
+    opacity: 0;
+
+    transition: 0.4s linear;
+}
+.row .row-title{
+    display: flex;
+    justify-content: space-between;
+}
+/* elementi hover */
+.row:hover p{
+    margin: 30px 0px;
+    opacity: 1;
+}
+.row:hover .fa-solid{
+    transform: rotate(180deg);
 }
 /*fine domande */
 
