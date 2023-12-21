@@ -30,7 +30,9 @@
                 <a href="#">Supporto</a>
                 <a href="#">Contatta l'ufficio venditore</a>
                 <a href="#">Accedi</a>
-                <div class="btn">Inizia</div>
+                <a href="#">
+                    <div class="btn">Inizia</div>       
+                </a>
             </div>
         </nav>
     </header>
@@ -43,7 +45,9 @@
                 <div class="hero">
                     <div class="hero-text">
                         <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                        <div class="btn">Inizia la tua prova gratuita</div>
+                        <a href="#">
+                            <div class="btn">Inizia la tua prova gratuita</div>
+                        </a>
                         <p>Annulla in qualsiasi momento</p> 
                         <i class="fa-solid fa-arrow-down"></i>      
                     </div>
@@ -59,13 +63,16 @@
         <!-- buisness plane -->
         <section class="container">
             <h2>Trova il piano buisness che fa per te</h2>
-            <span class="checkbox">
-                <input type="checkbox">Fatturazione mensile
+            <span class="radio-btn">
+                <input id="btn-1" name="radio-btn" type="radio">
+                <label for="btn-1">Fatturazione mensile</label>
             </span>
-            <span class="checkbox">
-                <input type="checkbox">Fatturazione annuale
+
+            <span class="radio-btn">
+                <input id="btn-2" name="radio-btn" type="radio">
+                <label for="btn-2">Fatturazione mensile</label>
             </span>
-            <!-- to fix -->
+         
             
 
             <!-- inizio colonne -->
@@ -102,11 +109,14 @@
                                 Funzioni di produttività premium e condivisione file semplice e sicura
                             </li>
                         </ul>
-                        <div class="btn">Prova gratis per 30 giorni</div>
-                        <div class="link">
-                            <span class="link">oppure</span> 
-                            <a href="#">acquista ora</a>
+                        <div class="free">
+                            <a href="#"><div class="btn">Prova gratis per 30 giorni</div></a>
                         </div>
+                        <div>
+                            <span class="border-small">oppure</span> 
+                            <a class="blue" href="#">acquista ora</a>
+                        </div>
+                        <hr>
                         <div class="list-title">
                             Punti Salienti del piano
                         </div>
@@ -155,11 +165,14 @@
                                 Sofisticate funzioni di controllo e per tenere al sicuro tutti i file nel tuo team
                             </li>
                         </ul>
-                        <div class="btn">Prova gratis per 30 giorni</div>
-                        <div class="link">
-                            <span class="link">oppure</span> 
-                            <a href="#">acquista ora</a>
+                        <div class="free">
+                            <a href="#"><div class="btn">Prova gratis per 30 giorni</div></a>
                         </div>
+                        <div>
+                            <span class="border-small">oppure</span> 
+                            <a href="#" class="blue">acquista ora</a>
+                        </div>
+                        <hr>
                         <div class="list-title">
                             Punti Salienti del piano
                         </div>
@@ -218,12 +231,16 @@
                             <li>
                                 <i class="fa-solid fa-share-nodes"></i>
                                 Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
+                            </li>
                         </ul>
-                        <div class="btn">Contattaci</div>
-                        <div class="link">
-                            <span class="link">oppure</span> 
-                            <a href="#">acquista ora</a>
+                        <div class="free">
+                            <a href="#"><div class="btn">Contattaci</div></a>
                         </div>
+                        <div>
+                            <span class="border-small">oppure</span> 
+                            <a href="#" class="blue">acquista ora</a>
+                        </div>
+                        <hr>
                         <div class="list-title">
                             Punti Salienti del piano
                         </div>
@@ -269,7 +286,7 @@
                     </div>
                     
                     <div class="btn-container">
-                        <div class="btn">Contatta l'ufficio vendite</div>
+                        <a href="#"><div class="btn">Contatta l'ufficio vendite</div></a>
                     </div>
                 </div>
             </div>
@@ -289,9 +306,11 @@
                     <p>
                         Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.
                     </p>
-                    <div class="btn white">
-                        trova un partner
-                    </div>
+                    <a href="#">
+                        <div class="btn white">
+                            trova un partner
+                        </div>
+                    </a>    
                 </div>
             </div>
         </section>
@@ -374,45 +393,51 @@
         </section>
 
 
-
-
-
-
-        <!-- TO FIX -->
-
-        <!-- quadrati -->
-        <section class="squares">
-            <div class="lateral-squares">
-                <div class="square bg-1"></div>
-                <div class="square bg-2"></div>
-                <div class="square bg-3"></div>
-                <div class="square bg-4"></div>
+        <!-- inizio squares -->
+        <div class="square-container">
+            <div class="container">
+                <div class="square bg-1">
+                    <img src="./img/designit.svg" alt="university logo">
+                </div>
+                <div class="square bg-2">
+                    <img src="./img/arizona_state_university.svg" alt="university logo">
+                </div>
+                <div class="square bg-3">
+                    <img src="./img/university_of_florida.svg" alt="university logo">
+                </div>
+                <div class="square bg-4">
+                    <img src="./img/topps.svg" alt="university logo">
+                </div>
             </div>
-
-
-            <div class="central-squares"></div>
-
-            <div class="lateral-squares">
-                <div class="square bg-5"></div>
-                <div class="square bg-6"></div>
-                <div class="square bg-7"></div>
-                <div class="square bg-8"></div>
+            <div class="container">
+                <div class="xl-square">
+    
+                    <img src="./img/designit.svg" alt="university logo">
+                    <hr>
+                    <p>
+                        "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper"
+                    </p>
+                    <p>
+                        Morten Thomsen, Global IT Lead
+                    </p>
+                </div>
             </div>
-        </section>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
+            <div class="container">
+                <div class="square bg-5">
+                    <img src="./img/world_bicycle_relief.svg" alt="university logo">
+                </div>
+                <div class="square bg-6">
+                    <img src="./img/hearst_corp.svg" alt="university logo">
+                </div>
+                <div class="square bg-7">
+                    <img src="./img/lonely_planet.svg" alt="university logo">
+                </div>
+                <div class="square bg-8">
+                    <img src="./img/clear_channel.svg" alt="university logo">
+                </div>
+            </div>
+        </div>
+        <!-- fine squares -->
 
         <!-- free trial -->
         <section class="bg-lightblue">
@@ -420,7 +445,9 @@
                 <div class="free-trial">
                     <h2>Porta Dropbox Business nella tua azienda.</h2>
                     <div class="btn-container">
-                        <div class="btn white">Inizia la tua prova gratuita</div>
+                        <a href="#">
+                            <div class="btn white">Inizia la tua prova gratuita</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -449,7 +476,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-box">
-                <ul id="border-bottom">
+                <ul>
                     <li><a href="#">Dropbox</a></li>
                     <li><a href="#">Applicazione desktop</a></li>
                     <li><a href="#">Perché Dropbox</a></li>
@@ -457,6 +484,8 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
+
+                <hr>
 
                 <div class="language">
                     <i class="fa-solid fa-earth-americas"></i>

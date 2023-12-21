@@ -22,7 +22,6 @@ h2{
     background-color: #b3cee5;
 }
 .btn{
-    display: inline-block;
     text-align: center;
 
     padding: 10px 16px;
@@ -92,6 +91,9 @@ h1{
 .container-big .hero{
     display: flex;    
 }
+.container-big .hero a{
+    text-decoration: none;
+}
 .container-big .hero .hero-text{
     display: flex;
     flex-direction: column;
@@ -119,7 +121,10 @@ h1{
 .container h2{
     margin-bottom: 60px;
 }
-.container .checkbox{
+
+
+
+.container .radio-btn{
     padding-right: 50px;
 }
 
@@ -147,40 +152,54 @@ h1{
 .plane .details{
     display: flex;
     flex-direction: column;
-    gap: 25px;
 
     padding: 0px 20px;
     margin-bottom: 50px;
 }
 .details .infos{
-    padding: 15px 0px;
+    padding-top: 15px;
+    padding-bottom: 45px;
 }
 .details .month{
     color: grey;
 }
-.details .link{
+.details .free a{
+    text-decoration: none;
+}
+.details .btn{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.details .border-small{
     padding-bottom: 40px;
 }
-.link span{
-    border-bottom: 1px solid #dddddf;
+.details hr{
+    width: 50px;
+    height: 1px;
+    margin: 40px 0px;
+
+    border: none;
+    background-color: #e8e8e9;
+
 }
 .details .list-title{
-    padding-top: 20px;
-    font-weight: 800;
+    font-weight: 800;margin-bottom: 36px;
 }
 .details ul{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    gap: 15px;
 }
 .details ul li{
     display: flex;
     align-items: baseline;
 
-    padding-bottom: 25px;
 }
 .details ul li .fa-solid{
     margin-right: 8px;
 }
-.details ul li .blue{
+.details .blue{
     color: #0061ff;
 }
 /* fine colonne */
@@ -213,9 +232,13 @@ h1{
 
     width: 50%;
 }
+.contacts .enterprise .btn-container a{
+    text-decoration: none;
+}
 .contacts .enterprise .value{
     margin-bottom: 58px;
 }
+
 /* fine sezione contantti sotto colonne */
 
 /* sezione trova un partner */
@@ -232,6 +255,9 @@ h1{
 .partner-text{
     width: 40%;
     padding: 60px 50px;
+}
+.partners a{
+    text-decoration: none;
 }
 .partner-text p{
     margin-bottom: 30px;
@@ -272,73 +298,85 @@ h1{
 /*fine info team */
 
 
-
-
-
-
-
-
-
-/* TO FIX */
-
 /* quadrati */
-.squares{
+.square-container {
     display: flex;
 }
-.lateral-squares{
-    background-color: darkblue;
-    /* test */
+.square-container .container {
     display: flex;
     flex-wrap: wrap;
 
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-}
-.central-squares{
     width: calc(100% / 3);
     height: calc(100vw / 3);
-
-    background-color: #f5f5f5;
 }
-.lateral-squares .square{
+.square-container .square {
+    position: relative;
+
     width: 50%;
     height: 50%;
 }
-.square.bg-1{
-    background-color: #a2d39b;
-    border: 10px solid #d1e9cd;
+.square-container .square img {
+    width: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
-.square.bg-2{
+.square-container .xl-square {
+    padding: 46px;
+    height: 100%;
+
+    background-color: #f5f5f5;
+
+    overflow: auto;
+}
+.square-container .xl-square img {
+    max-width: 270px;
+    margin-bottom: 40px;
+}
+.square-container .xl-square hr {
+    width: 110px;
+    height: 1px;
+
+    margin-bottom: 40px;
+
+    border: none;
+    background-color: #ececed;
+}
+.square-container .xl-square p:first-of-type{
+    margin-bottom: 55px;
+}
+/* prima fila */
+.container .bg-1{
+    background-color: #a2d39b;
+}
+.container .bg-2{
     background-color: #61082b;
 }
-.square.bg-3{
+.container .bg-3{
     background-color: #0093ce;
 }
-.square.bg-4{
+.container .bg-4{
     background-color: #ff1c1c;
 }
-.square.bg-5{
+
+/* seconda fila */
+.container .bg-5{
     background-color: #d5001f;
 }
-.square.bg-6{
+.container .bg-6{
     background-color: #b4d0e7;
 }
-.square.bg-7{
+.container .bg-7{
     background-color: #0d2481;
 }
-.square.bg-8{
+.container .bg-8{
     background-color: #ffd830;
 }
 /* fine quadrati */
-
-
-
-
-
-
-
-
-
 
 
 /* free trial */
@@ -358,6 +396,9 @@ h1{
     justify-content: center;
     align-items: flex-start;
     width: 40%;
+}
+.free-trial .btn-container a{
+    text-decoration: none;
 }
 /* fine free trial */
 
@@ -385,6 +426,8 @@ h1{
     border-bottom: 1px solid #b2b2b2;
 }
 /*fine domande */
+
+
 /* fine section */
 
 
@@ -406,11 +449,16 @@ footer{
 }
 
 /* lista */
-.footer-container ul:first-of-type{
+.footer-container ul{
     padding: 100px 0px;
 }
-.footer-box #border-bottom{
-    border-bottom: 1px solid #939393;
+.footer-box hr{
+    width: 70px;
+    height: 1px;
+
+    border: none;
+    
+    background-color: #939393;
 }
 .footer-box li{
     padding-bottom: 15px;
@@ -440,14 +488,5 @@ footer{
     color: #9a9999;
 }
 /* fine lingua */
-
-
-
-
-
-
-
-
-
 
 /* fine footer */
